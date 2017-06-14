@@ -11,7 +11,11 @@
 </head>
 
 <body>
-    <script id='BudgetTemplate' type='text/handlebars-x'> </script>
+    <script id='BudgetTemplate' type='text/handlebars-x'>
+    <input type="checked" name="" value=""><br>
+      <input type="checked" name="" value=""> <br>
+      <input type="checked" name="" value="">
+    </script>
 
     <div class="container">
         <!-- this is the heading row : which will be on top -->
@@ -35,8 +39,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="ten columns"></div>
-            <div class="two columns"></div>
+            <div class="two columns">
+                <input type="checkbox" name="budgetItem" value="Food">Food
+            </div>
+            <div class="two columns">
+                <input type="text" name="budgetAmount" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="two columns">
+                <input type="checkbox" name="budgetItem" value="Electricity">Electricity
+            </div>
+            <div class="two columns">
+                <input type="text" name="budgetAmount" value="Electricity">
+            </div>
         </div>
         <div class="row">
             <div class="two columns"></div>
