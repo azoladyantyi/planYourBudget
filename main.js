@@ -57,13 +57,13 @@ var budgetItems = [{
 button.addEventListener("click", function() {
 
   var income = grossIncome.value;
-  alert("R" + income);
+  //alert("R" + income);
 
-  var getDiv = document.querySelector('.items');
+  //var getDiv = document.querySelector('.items');
   // if (getDiv.style.display === 'none')
   // {
   //   alert('hello');
-  getDiv.style.display = 'block';
+  //getDiv.style.display = 'block';
   // }
   // else {
   //   getDiv.style.display = 'none';

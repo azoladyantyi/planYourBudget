@@ -26,7 +26,7 @@
       {{#each Items}}
       <tr>
         <td>{{id}}
-        <input type='checkbox'></input>
+          <input type='checkbox'></input>
         </td>
         <td>{{description}}</td>
         <td>{{amount}}</td>
@@ -40,59 +40,42 @@
 <body>
   <div id="itemDisplay">
 
-    <input type='button' id='achieved' value='ACHIEVED'>
-    <input type='button' id='unachieved' value='UNACHIEVED'>
   </div>
   <div class="container">
-    <!-- this is the heading row : which will be on top -->
+    <h1>Budget Status</h1>
     <div class="row">
-      <div class="ten columns">
-        <h1> Budget Status </h1>
+      <div class="four columns">
+        <label for="">Gross income:</label>
       </div>
-      <div class="two columns"></div>
+      <div class="eight columns">
+        <input id='grossIncome' type="textarea" name="" value=""><br>
+        <br>
+        <button type="button" name="button" id="budgetBtn">Budget</button>
+      </div>
     </div>
+    <div class="row">
+      <div class="six columns">
+        <h3 style="margin:5px">My Budget List</h3>
+
+        <div class='viewBudget'>
+
+        </div>
+      </div>
+      <div class="six columns">
+        <canvas id="buyers" width="600" height="400"></canvas>
+      </div>
+
+    </div>
+    <div class="row">
+      <input type='button' id='compareBtn' value='Item Status'></input>
+      <input type='button' id='achieved' value='ACHIEVED'>
+      <input type='button' id='unachieved' value='UNACHIEVED'>
+    </div>
+
+
+    <!-- this is the heading row : which will be on top -->
     <!-- gross income things - getting input from the user - add textbox and label -->
-
-    <div class="gross">
-      <div class="row">
-        <div class="two columns">
-          <label for="">Gross income:</label>
-        </div>
-        <div class="ten columns">
-          <input id='grossIncome' type="textarea" name="" value=""><br>
-          <br>
-          <button type="button" name="button" id="budgetBtn">Budget</button>
-        </div>
-      </div>
-    </div><br><br>
-    <!-- <div class="row">
-            <div class="two columns">
-                <input type="checkbox" name="budgetItem" value="Food">Food
-            </div>
-            <div class="two columns">
-                <input type="text" name="budgetAmount" value="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="two columns">
-                <input type="checkbox" name="budgetItem" value="Electricity">Electricity
-            </div>
-            <div class="two columns">
-                <input type="text" name="budgetAmount" value="Electricity">
-            </div>
-        </div> -->
-    <div class="items">
-      <div class="row">
-        <div class="itemsHeader">
-          <h3 style="margin:5px">My Budget List</h3>
-          <div class='viewBudget'> </div>
-        </div>
-      </div>
-      <div class="two columns">
-
-      </div>
-      <div class="ten columns"></div>
-    </div>
+    
   </div>
   <div class="row">
     <div class="ten columns"></div>
@@ -109,8 +92,7 @@
   </div>
 
 
-  <input type='button' id='compareBtn' value='Item Status'></input>
-  <canvas id="buyers" width="600" height="400"></canvas>
+
   <script src='main.js'>
   </script>
 </body>
