@@ -6,6 +6,11 @@ table{
   margin: auto;
 }
 
+th, td{
+  padding: 5px
+  border : 1px solid black;
+}
+
 html {
     background-color: skyblue;
 }
@@ -21,6 +26,7 @@ padding: 3em;
 /*padding-top: 3em;*/
 padding-bottom: 5em;
 width: 25em;
+display: none;
 
 }
 .itemsHeader {

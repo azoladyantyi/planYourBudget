@@ -51,21 +51,31 @@ var budgetItems = [{
 ];
 
 
+
 button.addEventListener("click", function(){
 
 var income = grossIncome.value;
 alert("R"+income);
 
+var getDiv = document.querySelector('.items');
+// if (getDiv.style.display === 'none')
+// {
+//   alert('hello');
+  getDiv.style.display = 'block';
+// }
+// else {
+//   getDiv.style.display = 'none';
+//
+// }
 var searchResults = budgetTemplateInst({Items : budgetItems})
 viewBudget.innerHTML = searchResults;
-
 });
 
-addBtn.addEventListener('click', function(){
-var itemName = document.querySelector('#itemInput').value;
-var price = document.querySelector('#priceInput'). value;
-
-})
+// addBtn.addEventListener('click', function(){
+// var itemName = document.querySelector('#itemInput').value;
+// var price = document.querySelector('#priceInput'). value;
+//
+// })
 
 //Tempalte budget
 
