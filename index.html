@@ -12,9 +12,9 @@
 
 <body>
     <script id='BudgetTemplate' type='text/handlebars-x'>
-    <input type="checked" name="" value=""><br>
-      <input type="checked" name="" value=""> <br>
-      <input type="checked" name="" value="">
+        <input type="checkbox" name="" value="">
+        <input type="text" name="item" value="">
+        <input type="text" name="price" value="">
     </script>
 
     <div class="container">
@@ -37,8 +37,8 @@
                     <button type="button" name="button" id="budgetBtn">Budget</button>
                 </div>
             </div>
-        </div>
-        <div class="row">
+        </div><br><br>
+        <!-- <div class="row">
             <div class="two columns">
                 <input type="checkbox" name="budgetItem" value="Food">Food
             </div>
@@ -53,23 +53,34 @@
             <div class="two columns">
                 <input type="text" name="budgetAmount" value="Electricity">
             </div>
-        </div>
-        <div class="row">
-            <div class="two columns"></div>
+        </div> -->
+        <div class="items">
+            <div class="row">
+                <div class="itemsHeader">
+                    <h3 style="margin:5px">My Budget List</h3>
+                </div>
+                <input type="text" id="itemInput" placeholder="Item...">
+                <input type="text" id="priceInput" placeholder="Price...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+            <div class="two columns">
+
+            </div>
             <div class="ten columns"></div>
         </div>
-        <div class="row">
-            <div class="ten columns"></div>
-            <div class="two columns"></div>
-        </div>
-        <div class="row">
-            <div class="two columns"></div>
-            <div class="ten columns"></div>
-        </div>
-        <div class="row">
-            <div class="ten columns"></div>
-            <div class="two columns"></div>
-        </div>
+    </div>
+    <div class="row">
+        <div class="ten columns"></div>
+        <div class="two columns"></div>
+    </div>
+    <div class="row">
+        <div class="two columns"></div>
+        <div class="ten columns"></div>
+    </div>
+    <div class="row">
+        <div class="ten columns"></div>
+        <div class="two columns"></div>
+    </div>
     </div>
     <script src='main.js'>
     </script>
