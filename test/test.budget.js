@@ -9,9 +9,9 @@ describe('Our budget app', function(){
     var budgetItems = allBudgetItems();
     assert.equal(7, budgetItems.length);
 
-    assert.deepEqual({ id : 1, description : 'Food', selected : false, amount : 0}, budgetItems[0]);
-    assert.deepEqual({ id : 4, description : 'Hair', selected : false, amount : 0}, budgetItems[3]);
-    assert.deepEqual({ id : 7, description : 'Laptop', selected : false, amount : 0}, budgetItems[6]);
+    assert.equal(JSON.stringify({ id : 1, description : 'Food', selected : false, amount : 0}), JSON.stringify(budgetItems[0]));
+    assert.equal(JSON.stringify({ id : 4, description : 'Hair', selected : false, amount : 0}), JSON.stringify(budgetItems[3]));
+    assert.equal(JSON.stringify({ id : 7, description : 'Laptop', selected : false, amount : 0}), JSON.stringify(budgetItems[6]));
 
   });
 
@@ -35,7 +35,6 @@ describe('Our budget app', function(){
   it('should allow me to to see a list of selected BudgetItems', function(){
 
     clearBudgetSelection();
-
 
     selectBudgetItem('Food', 200);
     selectBudgetItem('Electricity',500);
