@@ -43,20 +43,11 @@ input[type='button']{
   color: black;
   border: 2px solid black;
 }
-
-/* Style the "Add" button */
-/*.addBtn {
-  padding: 7px;
-  width: 10%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-}*/
-
-/*.addBtn:hover {
-  background-color: #bbb;
-}*/
+#budgetBtn {
+  color: black;
+  border: 2px solid black;
+}
+#getTotal {
+  color: black;
+  border: 2px solid black;
+}
