@@ -13,28 +13,28 @@
 </head>
 
 <script id='budgetTemplate' type='text/handlebars-x'>
-  <table>
+<table>
 
-    <thead>
-      <th>ID</th><br>
-      <th>DESCRIPTION</th><br>
-      <th>AMOUNT</th><br>
-      <th>SELECTED</th><br>
-    </thead>
+  <thead>
+    <th>DESCRIPTION</th>
+    <th>AMOUNT</th>
+    <th>SELECTED</th>
+  </thead>
 
-    <tbody>
-      {{#each Items}}
-      <tr>
-        <td>{{id}}
-          <input type='checkbox'></input>
-        </td>
-        <td>{{description}}</td>
-        <td>{{amount}}</td>
-        <td>{{selected}}</td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  <tbody>
+    {{#each Items}}
+    <tr>
+      <td>{{description}}</td>
+      <td>{{amount}}</td>
+
+      <td>
+        <input type='checkbox' name='checkbox' id='check'>
+      </td>
+
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
 </script>
 
 <body>
@@ -75,7 +75,7 @@
 
     <!-- this is the heading row : which will be on top -->
     <!-- gross income things - getting input from the user - add textbox and label -->
-    
+
   </div>
   <div class="row">
     <div class="ten columns"></div>

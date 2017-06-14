@@ -2,13 +2,12 @@ body{
 text-align: center;
 }
 
-table{
-  margin: auto;
-}
 
-th, td{
+table,th, td{
+  margin: auto;
   padding: 5px
   border : 1px solid black;
+  padding: 1em;
 }
 
 html {
@@ -40,9 +39,13 @@ input {
   float: left;
   font-size: 16px;
 }
+input[type='button']{
+  color: black;
+  border: 2px solid black;
+}
 
 /* Style the "Add" button */
-.addBtn {
+/*.addBtn {
   padding: 7px;
   width: 10%;
   background: #d9d9d9;
@@ -52,8 +55,8 @@ input {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-}
+}*/
 
-.addBtn:hover {
+/*.addBtn:hover {
   background-color: #bbb;
-}
+}*/
