@@ -24,7 +24,9 @@
     <tbody>
       {{#each Items}}
       <tr>
-        <td>{{id}}</td>
+        <td>{{id}}
+        <input type='checkbox'></input>
+        </td>
         <td>{{description}}</td>
         <td>{{amount}}</td>
         <td>{{selected}}</td>
@@ -37,6 +39,8 @@
 <body>
   <div id="itemDisplay">
 
+    <input type='button' id='achieved' value='ACHIEVED'>
+    <input type='button' id='unachieved' value='UNACHIEVED'>
   </div>
   <div class="container">
     <!-- this is the heading row : which will be on top -->

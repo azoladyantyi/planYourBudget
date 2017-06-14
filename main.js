@@ -14,38 +14,38 @@ var addBtn = document.querySelector('#addBtn')
 var budgetItems = [{
     id: 1,
     description: 'Food',
-    amount: 0,
+    amount: 'R' + 600,
     selected: false
   },
   {
     id: 2,
     description: 'Electricity',
-    amount: 0,
+    amount: 'R' + 300,
     selected: false
   }, {
     id: 3,
     description: 'Stokvel',
-    amount: 0,
+    amount:  'R' + 500,
     selected: false
   }, {
     id: 4,
     description: 'Hair',
-    amount: 0,
+    amount: 'R' + 200,
     selected: false
   }, {
     id: 5,
     description: 'Cloths',
-    amount: 0,
+    amount:  'R' + 400,
     selected: false
   }, {
     id: 6,
     description: 'Baby Stuff',
-    amount: 0,
+    amount:  'R' + 500,
     selected: false
   }, {
     id: 7,
     description: 'Laptop',
-    amount: 0,
+    amount: 'R' + 1600,
     selected: false
   }
 ];
