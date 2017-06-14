@@ -10,6 +10,7 @@ function allBudgetItems(){
 
 function selectBudgetItem(itemName, amount){
 
+
 }
 
 //use filter - if the selected is true

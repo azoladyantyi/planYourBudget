@@ -4,7 +4,7 @@ describe('Our budget app', function(){
     assert.equal(1,2);
   });
 
-  it('should be show me a list of Budget Items', function(){
+  it('should be able show me a list of Budget Items', function(){
 
     var budgetItems = allBudgetItems();
     assert.equal(7, budgetItems.length);
