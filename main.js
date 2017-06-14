@@ -1,16 +1,25 @@
 // var budgetItem='';
 'use strict'
 
-
-
 var budgetTemplate = document.querySelector('#budgetTemplate').innerHTML;
 var budgetTemplateInst = Handlebars.compile(budgetTemplate);
 var viewBudget = document.querySelector('.viewBudget')
 
 var button = document.querySelector('#budgetBtn');
 var grossIncome = document.querySelector('#grossIncome');
-var addBtn = document.querySelector('#addBtn')
-var ItemStatus = document.querySelector('#compareBtn')
+var addBtn = document.querySelector('#addBtn');
+var ItemStatus = document.querySelector('#compareBtn');
+
+var achieved = document.querySelector('#achieved');
+var unachieved = document.querySelector('#unachieved');
+
+achieved.addEventListener('click', function(){
+  alert('achieved')
+});
+
+unachieved.addEventListener('click', function(){
+  alert("unachieved")
+});
 
 
 var budgetItems = [{
@@ -57,18 +66,8 @@ var budgetItems = [{
 button.addEventListener("click", function() {
 
   var income = grossIncome.value;
-  //alert("R" + income);
+  alert('R' + income)
 
-  //var getDiv = document.querySelector('.items');
-  // if (getDiv.style.display === 'none')
-  // {
-  //   alert('hello');
-  //getDiv.style.display = 'block';
-  // }
-  // else {
-  //   getDiv.style.display = 'none';
-  //
-  // }
   var searchResults = budgetTemplateInst({
     Items: budgetItems
   })
