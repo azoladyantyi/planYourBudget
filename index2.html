@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+  <meta charset="utf-8">
+  <title>Plan your budget</title>
+</head>
+
+<script id='budgetTemplate' type='text/handlebars-x'>
+  <table>
+
+    <thead>
+      <th>DESCRIPTION</th>
+      <th>AMOUNT</th>
+      <th>SELECTED</th>
+    </thead>
+
+    <tbody>
+      {{#each Items}}
+      <tr>
+        <td>{{description}}</td>
+        <td>{{amount}}</td>
+
+        <td>
+          <input type='checkbox' name='checkbox' id='check'>
+        </td>
+
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</script>
+
+<body>
+  <div id="itemDisplay">
+
+    <input type='button' id='achieved' value='ACHIEVED'>
+    <input type='button' id='unachieved' value='UNACHIEVED'>
+  </div>
+  <div class="container">
+    <!-- this is the heading row : which will be on top -->
+    <div class="row">
+      <div class="ten columns">
+        <h1> Budget Status </h1>
+      </div>
+      <div class="two columns"></div>
+    </div>
+    <!-- gross income things - getting input from the user - add textbox and label -->
+
+    <div class="gross">
+      <div class="row">
+        <div class="two columns">
+          <label for="">Gross income:</label>
+        </div>
+        <div class="ten columns">
+          <input id='grossIncome' type="textarea" name="" value=""><br>
+          <br>
+          <button type="button" name="button" id="budgetBtn">Budget</button>
+        </div>
+      </div>
+    </div><br><br>
+    <!-- <div class="row">
+            <div class="two columns">
+                <input type="checkbox" name="budgetItem" value="Food">Food
+            </div>
+            <div class="two columns">
+                <input type="text" name="budgetAmount" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="two columns">
+                <input type="checkbox" name="budgetItem" value="Electricity">Electricity
+            </div>
+            <div class="two columns">
+                <input type="text" name="budgetAmount" value="Electricity">
+            </div>
+        </div> -->
+    <div class="items">
+      <div class="row">
+        <div class="itemsHeader">
+          <h3 style="margin:5px">My Budget List</h3>
+          <div class='viewBudget'> </div>
+          <br>
+          <br>
+          <button type="button" name="totalBtn" id="getTotal">Get Total</button>
+        </div>
+      </div>
+      <div class="two columns">
+
+      </div>
+      <div class="ten columns"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="ten columns"></div>
+    <div class="two columns"></div>
+  </div>
+  <div class="row">
+    <div class="two columns"></div>
+    <div class="ten columns"></div>
+  </div>
+  <div class="row">
+    <div class="ten columns"></div>
+    <div class="two columns"></div>
+  </div>
+  </div>
+
+  <script src='main.js'>
+  </script>
+</body>
+
+</html>
