@@ -165,7 +165,6 @@ unachieved.addEventListener('click', function() {
 button.addEventListener("click", function() {
 
   var income = grossIncome.value;
-  disIncome.innerHTML = income;
   //alert( income)
 
 
@@ -209,7 +208,7 @@ ItemStatus.addEventListener('click', function() {
       labels: ["Achieved", "Unachieved"],
       datasets: [{
         data: [2200, 1900],
-        backgroundColor: ['#CD5C5C', 'Yellow'] 
+        backgroundColor: ['#CD5C5C', 'Yellow']
       }]
     },
 
