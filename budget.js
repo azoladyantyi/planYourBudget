@@ -41,29 +41,56 @@ var budgetItems = [{
 //find
 //forEach
 
+
+function myReset(count) {
+
+  count = 0;
+  localStorage.setItem('count', 0);
+  return count;
+}
+
 function allBudgetItems() {
   console.log(budgetItems);
   return budgetItems;
 }
 
-function selectBudgetItem(itemName, amount) {
+// function selectBudgetItem(itemName, amount) {
+// if(itemName === 'Food'){top'){
+//   return itemName + amount;
+// }
+//
+// use filter - if the selected is true
+var arr = [];
 
-}
-
-//use filter - if the selected is true
 function selectedBudgetItems() {
+  budgetItems.forEach(function(budgetItem) {
+    if (budgetItem.selected == true) {
+      arr.push(budgetItem);
+    }
+  });
+  return arr;
 
 }
 
-//use filter - if the selected is false
+
+
+// use filter - if the selected is false
 function unselectedBudgetItems() {
+  budgetItems.forEach(function(budgetItem) {
+    if (budgetItem.selected == false) {
+      arr.push(budgetItem.description);
+    }
+  });
+  return arr;
 
 }
+
+
 
 
 function clearBudgetSelection() {
   budgetItems.forEach(function(budgetItem) {
     budgetItem.selected = false;
     budgetItem.amount = 0;
-  });
-}
+  })
+};
