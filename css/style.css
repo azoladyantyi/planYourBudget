@@ -1,5 +1,6 @@
-body{
-text-align: center;
+body {
+    text-align: center;
+    background-color:	blanchedalmond;
 }
 
 
@@ -10,9 +11,6 @@ table,th, td{
   padding: 1em;
 }
 
-html {
-    background-color: skyblue;
-}
 
 .gross {
     border-style: solid;
