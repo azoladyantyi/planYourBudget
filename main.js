@@ -202,7 +202,7 @@ ItemStatus.addEventListener('click', function() {
       labels: ["Achieved", "Unachieved"],
       datasets: [{
         data: [2200, 1900],
-
+        backgroundColor: ['#CD5C5C', 'yellow']
       }]
     },
 
