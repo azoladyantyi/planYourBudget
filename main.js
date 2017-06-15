@@ -1,4 +1,4 @@
-// var budgetItem='';
+var budgetItem='';
 'use strict'
 
 var budgetTemplate = document.querySelector('#budgetTemplate').innerHTML;
@@ -9,11 +9,12 @@ var button = document.querySelector('#budgetBtn');
 var grossIncome = document.querySelector('#grossIncome');
 var addBtn = document.querySelector('#addBtn');
 var ItemStatus = document.querySelector('#compareBtn');
-
+var getTotal = document.querySelector('#getTotal');
 var achieved = document.querySelector('#achieved');
 var unachieved = document.querySelector('#unachieved');
-
-
+var disIncome = document.querySelector('.disIncome')
+var holder=document.querySelector('#holdTotal');
+var tot = document.querySelector('.hidden');
 
 var budgetItems = [{
     id: 1,
@@ -96,14 +97,18 @@ achieved.addEventListener('click', function() {
     return budgetItem.selected;
   });
 
-
   var total = 0;
   selectedItems.forEach(function(item){
     console.log (item.amount)
-     total += Number(item.amount);
-  });
+    total += Number(item.amount);
+tot.classList.remove('hidden');
+    holder.innerHTML=total;
 
-  alert(total);
+  });
+  // alert(total);
+
+
+
 
   viewBudget.innerHTML = budgetTemplateInst({
     Items: selectedItems
@@ -129,6 +134,7 @@ unachieved.addEventListener('click', function() {
 
     uncheckedItems.forEach(function(checkbox) {
       var currentId = checkbox.value;
+
       var currentItem = budgetItems.find(function(item) {
         return item.id === Number(currentId);
       });
@@ -159,6 +165,7 @@ unachieved.addEventListener('click', function() {
 button.addEventListener("click", function() {
 
   var income = grossIncome.value;
+  disIncome.innerHTML = income;
   //alert( income)
 
 
@@ -202,7 +209,7 @@ ItemStatus.addEventListener('click', function() {
       labels: ["Achieved", "Unachieved"],
       datasets: [{
         data: [2200, 1900],
-        backgroundColor: ['#CD5C5C', 'yellow']
+
       }]
     },
 

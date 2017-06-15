@@ -1,71 +1,56 @@
-body {
-    text-align: center;
-    background-color: #DEFFF5;
+body{
+text-align: center;
 }
 
-/*#six-columns{
-  padding-top: 45px;
-}*/
 
-h1 {
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 80px;
-    background-color: yellow;
-    color: black;
-}
-
-table, th, td {
-    margin: auto;
-    padding: 5px border: 1px solid black;
-    padding: 1em;
+table,th, td{
+  margin: auto;
+  padding: 5px
+  border : 1px solid black;
+  padding: 1em;
 }
 
 html {
-    background-color: white;
+    background-color: skyblue;
 }
 
 .gross {
     border-style: solid;
-    padding: 10px;
-    width: 25em;
+  padding: 10px;
+  width: 25em;
 }
+.items{
+  border-style: solid;
+padding: 3em;
+/*padding-top: 3em;*/
+padding-bottom: 5em;
+width: 25em;
+display: none;
 
-.items {
-    border-style: solid;
-    padding: 3em;
-    /*padding-top: 3em;*/
-    padding-bottom: 5em;
-    width: 25em;
-    display: none;
 }
-
 .itemsHeader {
-    padding: 1px;
+  padding: 1px;
 }
-
-
 /* Style the input */
-
 input {
-    border: none;
-    width: 30%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
+  border: none;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
 }
-
-input[type='button'] {
-    color: black;
-    border: 2px solid black;
+input[type='button']{
+  color: black;
+  border: 2px solid black;
 }
-
 #budgetBtn {
-    color: black;
-    border: 2px solid black;
+  color: black;
+  border: 2px solid black;
 }
-
 #getTotal {
-    color: black;
-    border: 2px solid black;
+  color: black;
+  border: 2px solid black;
+}
+.hidden{
+  display: none;
 }
