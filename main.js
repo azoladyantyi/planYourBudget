@@ -12,7 +12,6 @@ var ItemStatus = document.querySelector('#compareBtn');
 var getTotal = document.querySelector('#getTotal');
 var achieved = document.querySelector('#achieved');
 var unachieved = document.querySelector('#unachieved');
-var disIncome = document.querySelector('.disIncome')
 var holder=document.querySelector('#holdTotal');
 var tot = document.querySelector('.hidden');
 
@@ -165,6 +164,7 @@ unachieved.addEventListener('click', function() {
 button.addEventListener("click", function() {
 
   var income = grossIncome.value;
+
   //alert( income)
 
 
